@@ -1,6 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
 import React, { Component } from 'react';
-import { StyleSheet, Text, View,Image,TextInput,TouchableOpacity,Alert,KeyboardAvoidingView   } from 'react-native';
+import { StyleSheet, Text, View,Image,TextInput,TouchableOpacity,Alert   } from 'react-native';
 import Logo from "./Logo";
 import Array from './Helper'
 
@@ -56,7 +56,7 @@ export default class Login extends Component{
  }
     render(){
   return (
-    <KeyboardAvoidingView>
+   
     <View style={styles.container}>
    <Logo/>
 <View>
@@ -85,7 +85,7 @@ export default class Login extends Component{
        <Text style={styles.signupButton} onPress={()=>this.props.navigation.navigate('Signup')}>Signup</Text>
    </View>
     </View>
-    </KeyboardAvoidingView>
+    
   );
 }
 }

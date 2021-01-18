@@ -75,7 +75,7 @@ export default class SignUp extends React.Component {
  
   render() {
     return (
-    <KeyboardAvoidingView>
+    
       <View style={styles.container}>
        <Text style={{color:'black',fontSize:16,textAlign:'center'}}>Enter the username</Text>
         <TextInput
@@ -118,7 +118,7 @@ export default class SignUp extends React.Component {
           onPress={this.signUp}
         />
       </View>
-      </KeyboardAvoidingView>
+ 
     )
   }
 }
